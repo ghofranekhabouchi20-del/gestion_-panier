@@ -10,7 +10,8 @@
 <body>
 
     <header>
-        <h1>Gestion de Panier</h1>
+        <div class="logo">SHOP<span>NOW</span></div>
+
         <nav>
             <a href="#accueil">Accueil</a>
             <a href="#produits">Produits</a>
@@ -18,22 +19,37 @@
         </nav>
     </header>
 
-    <main id="accueil">
-        <h2>Bienvenue dans notre boutique</h2>
-        <p>Découvrez nos produits et ajoutez-les à votre panier.</p>
+    <main>
+        <section class="hero" id="accueil">
+            <div>
+                <p class="welcome">BIENVENUE CHEZ SHOPNOW</p>
+                <h1>Découvrez nos produits<br>et faites votre choix.</h1>
+                <p>Une sélection de produits pour tous vos besoins.</p>
+                <a href="#produits" class="hero-button">Découvrir les produits</a>
+            </div>
+        </section>
 
         <section id="produits">
             <h2>Nos Produits</h2>
+            <p class="subtitle">Découvrez notre collection</p>
+
             <div id="liste-produits"></div>
         </section>
 
         <section id="panier">
-            <h2>Mon Panier</h2>
+            <h2>Mon Panier 🛒</h2>
             <div id="contenu-panier"></div>
-            <h3>Total : <span id="total">0</span> DT</h3>
-            <button id="vider-panier">Vider le panier</button>
+
+            <div class="total-box">
+                <h3>Total : <span id="total">0</span> DT</h3>
+                <button id="vider-panier">Vider le panier</button>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <p>© 2026 SHOPNOW - Gestion de Panier</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
