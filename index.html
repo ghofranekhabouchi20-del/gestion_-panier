@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Panier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestion de Panier</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#produits">Produits</a>
+            <a href="#panier">Mon Panier 🛒</a>
+        </nav>
+    </header>
+
+    <main id="accueil">
+        <h2>Bienvenue dans notre boutique</h2>
+        <p>Découvrez nos produits et ajoutez-les à votre panier.</p>
+
+        <section id="produits">
+            <h2>Nos Produits</h2>
+            <div id="liste-produits"></div>
+        </section>
+
+        <section id="panier">
+            <h2>Mon Panier</h2>
+            <div id="contenu-panier"></div>
+            <h3>Total : <span id="total">0</span> DT</h3>
+            <button id="vider-panier">Vider le panier</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

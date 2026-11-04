@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f6fa;
+    color: #172b4d;
+}
+
+header {
+    background-color: #172b4d;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #65b3ff;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+main > h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+main > p {
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+section {
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+section h2 {
+    margin-bottom: 25px;
+}
+
+#liste-produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produit {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.produit h3 {
+    margin-bottom: 12px;
+}
+
+.produit p {
+    margin-bottom: 15px;
+    color: #64748b;
+}
+
+button {
+    background-color: #2878d0;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #172b4d;
+}
+
+#panier {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+#contenu-panier {
+    margin-bottom: 20px;
+}
+
+#panier h3 {
+    margin: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+}
