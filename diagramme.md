@@ -1,17 +1,24 @@
-
-# Diagramme des cas d'utilisation
-
-## Acteur principal : Client
-
-```mermaid
 flowchart LR
-    C["👤 Client"]
+    U([Utilisateur])
 
-    C --- A(["Consulter les produits"])
-    C --- B(["Ajouter un produit au panier"])
-    C --- D(["Modifier la quantité"])
-    C --- E(["Supprimer un produit"])
-    C --- F(["Consulter le panier"])
-    C --- G(["Calculer le total"])
-    C --- H(["Vider le panier"])
-```
+    subgraph Application["Application Gestion de Panier"]
+        A([Consulter les produits])
+        B([Ajouter un produit au panier])
+        C([Consulter le panier])
+        D([Modifier la quantité])
+        E([Supprimer un produit])
+        F([Vider le panier])
+        G([Calculer le total])
+    end
+
+    U --- A
+    U --- B
+    U --- C
+    U --- D
+    U --- E
+    U --- F
+
+    B --> G
+    D --> G
+    E --> G
+    F --> G
